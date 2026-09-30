@@ -1,0 +1,19 @@
+FOOD DELIVERY PERFORMANCE & CUSTOMER ANALYTICS PIPELINE
+Phase 1 – One-Page Project Proposal
+
+Dataset:
+A synthetic relational food-delivery dataset containing customers, restaurants, menu items, orders, order items, delivery details and customer reviews. The dataset contains more than 50,000 records and is designed with realistic data-quality issues such as duplicate orders, orphan records, invalid numeric values and missing ratings.
+
+Pipeline:
+Raw CSV files will be ingested into Databricks Bronze without changing the source data. Silver will perform type conversion, duplicate removal, referential-integrity checks, missing-value handling and standardisation. Gold will contain business-ready aggregates. Gold data will then be exported and loaded into Snowflake through a stage and COPY INTO for SQL analysis.
+
+Three Business Questions:
+1. Which restaurants have the highest late-delivery rates, and how does late delivery relate to customer ratings?
+2. Which customer segments contribute the most revenue, and how does their ordering behaviour change over time?
+3. Which food categories generate the highest revenue, and which categories receive the strongest customer ratings?
+
+Silver Layer:
+Silver will contain cleaned and typed customer, restaurant, menu-item, order, order-item, delivery and review data. Duplicate orders will be removed using order_id, orphan order-item records will be rejected, invalid numeric values will be converted safely and missing review ratings will be retained as NULL where appropriate. Cleaning decisions will be documented.
+
+Expected Outcome:
+The completed pipeline will provide trusted food-delivery performance and customer analytics through Databricks and Snowflake, with reproducible data-quality checks and SQL answers to the three business questions.
