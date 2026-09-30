@@ -1,8 +1,9 @@
 # Food Delivery Performance & Customer Analytics Pipeline
 
 **Roll Number:** 23052151  
+**Name:** Chirashree Mallick
 **Project Type:** End-to-End Data Engineering & Analytics Pipeline  
-**Domain:** Food Delivery Analytics  
+**Domain:** Data Engineering
 **Primary Platform:** Databricks  
 **Target Platform:** Snowflake  
 
